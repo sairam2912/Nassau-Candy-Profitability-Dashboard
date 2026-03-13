@@ -90,6 +90,7 @@ The dashboard allows users to explore insights interactively.
 - Streamlit
 - Matplotlib
 - Seaborn
+- scikit-learn
 
 ---
 
@@ -100,6 +101,13 @@ Install the required libraries using:
 
 pip install -r requirements.txt
 
+
+---
+## Machine Learning Implementation
+
+A Linear Regression model was implemented to predict product profitability based on business variables such as sales, cost, units sold, division, and region.
+
+The model was trained using scikit-learn and evaluated using performance metrics including Mean Absolute Error and R² Score. This demonstrates how machine learning can support profit forecasting and pricing optimization.
 
 ---
 
