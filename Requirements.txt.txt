@@ -1,0 +1,78 @@
+Libraries Used in Your Project
+
+Your project uses the following libraries.
+
+1. Streamlit
+Streamlit is used to build the interactive dashboard.
+It allows users to:
+View charts
+Apply filters
+Interact with data
+Explore insights dynamically
+Example usage in your project:
+
+st.title("Nassau Candy Distributor Profitability Dashboard")
+st.plotly_chart(fig)
+
+
+
+
+2. Pandas
+Pandas is used for data processing and analysis.
+It helps to:
+Load dataset
+Clean data
+Perform calculations
+Group and aggregate data
+Example:
+
+df = pd.read_csv("Nassau Candy Distributor.csv")
+and
+df.groupby("Division")["Gross Profit"].sum()
+
+
+
+3. Plotly
+Plotly is used for interactive visualizations.
+Unlike matplotlib, Plotly charts support:
+Hover tooltips
+Zoom
+Pan
+Interactive legends
+Example:
+fig = px.bar(division_summary, x="Division", y="Gross Margin %")
+
+
+
+4. Seaborn
+Seaborn is used for statistical visualization and exploratory analysis during EDA.
+It simplifies complex plots such as:
+Bar charts
+Distribution plots
+Correlation analysis
+Example:
+sns.barplot(data=division_summary, x="Division", y="Gross Margin %")
+
+
+
+5. Matplotlib
+Matplotlib is a core Python visualization library used for generating charts and figures.
+It provides flexibility for:
+Line charts
+Scatter plots
+Custom chart styling
+Example:
+plt.figure(figsize=(10,5))
+Final requirements.txt
+
+
+
+
+
+Your file should contain:
+
+streamlit
+pandas
+plotly
+seaborn
+matplotlib
